@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    background-image: radial-gradient(
+        rgb(89, 212, 89),
+        rgb(107, 23, 243),
+        rgb(231, 231, 65)
+    );
+    background-size: 500% 500%;
+    animation: gradient 10s alternate infinite;
+}
+
+.text {
+    font-size: 50px;
+    letter-spacing: -.22ch;
+    cursor: url('cat.png'), auto;
+}
+
+span {
+    animation-name: moveUp;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    display: inline-block;
+}
+
+span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+span:nth-child(5) {
+    animation-delay: 0.3s;
+}
+span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+span:nth-child(11) {
+    animation-delay: 1s;
+}
+
+@keyframes moveUp {
+    to {
+        transform: translateY(-40px) scale(1.125);
+        color: rgb(62, 233, 113);
+        letter-spacing: 0;
+    }
+}
+
+@keyframes gradient {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
