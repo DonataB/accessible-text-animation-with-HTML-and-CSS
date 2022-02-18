@@ -1,4 +1,1 @@
-# accessible-text-animation-with-HTML-and-CSS
-Trick from scrimba
-
-Custom cursor and moving color background in CSS. Some fun tricks inspired  by scrimba.
+Custom cursor, text animation and moving color background in CSS. Inspired by Scrimba https://scrimba.com/allcourses
